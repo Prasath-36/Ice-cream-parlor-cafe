@@ -53,6 +53,36 @@ The **Ice Cream Parlor Management Application** is a GUI-based system built usin
 4. The GUI will open, and you can start managing your ice cream parlor data.
 
 ---
+## Run the Application with Docker
+
+1. **Build the Docker Image**:
+   ```bash
+   docker build -t ice-cream-app .
+   ```
+
+2. **Run the Docker Container**:
+   ```bash
+   docker run -d --name ice-cream-app-container -p 8000:8000 ice-cream-app
+   ```
+
+   - Replace `8000:8000` with the appropriate port mapping if your application uses a different port.
+
+3. **Stop the Docker Container**:
+   ```bash
+   docker stop ice-cream-app-container
+   ```
+
+4. **Remove the Docker Container**:
+   ```bash
+   docker rm ice-cream-app-container
+   ```
+
+5. **Remove the Docker Image**:
+   ```bash
+   docker rmi ice-cream-app
+   ```
+
+---
 
 ## Database Tables and Functions
 
